@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Result</title>
+</head>
+<body>
+<h1>Search Result</h1>
+<div>
+<p id="searchValue"></p>
+</div>
+    <script>
+        // Get the search variable from the URL query string
+        var searchVariable = new URLSearchParams(window.location.search).get('s');
+        // Display the search variable in the page
+        var searchValueElement = document.getElementById("searchValue");
+        searchValueElement.innerText = "Search Query: " + searchVariable;
+</script>
+</body>
+</html>
